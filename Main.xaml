@@ -1,0 +1,393 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1094,4777" sap2010:WorkflowViewState.IdRef="Main_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="740,4712" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="intRetryCount" />
+      <Variable x:TypeArguments="x:String" Name="strDialogMessage">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" Value="" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="strURL">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" Value="" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="strrDialogLabel">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" Value="" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:TimeSpan" Default="00:00:00" Name="timeSpanRetryInterval" />
+      <Variable x:TypeArguments="x:Double" Default="0" Name="doubleTimeout" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New DataTable()]" Name="dt_Data" />
+      <Variable x:TypeArguments="x:String" Name="strFilePath">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" Value="" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:Double" Default="0" Name="doubleDelay" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message RPADev-S05P05-DataScraping-VB.Main.Begin;" sap:VirtualizedContainerService.HintSize="678,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;RPADev-S05P05-DataScraping-VB.Main.Begin;&quot;]" />
+    <Sequence DisplayName="Sequence Initialization" sap:VirtualizedContainerService.HintSize="678,445" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:MultipleAssign DisplayName="Multiple Assign Initialization" sap:VirtualizedContainerService.HintSize="479,325" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+        <ui:MultipleAssign.AssignOperations>
+          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:Double">[doubleDelay]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:Double">5</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:Double">[doubleTimeout]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:Double">5</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:Int32">[intRetryCount]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:Int32">10</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[strrDialogLabel]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">Save Data To CSV</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[strDialogMessage]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">Select a .csv file to save the data to.</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:TimeSpan">[timeSpanRetryInterval]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:TimeSpan">00:00:15</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[strURL]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">https://acme-test.uipath.com/login</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+          </scg:List>
+        </ui:MultipleAssign.AssignOperations>
+      </ui:MultipleAssign>
+    </Sequence>
+    <Sequence DisplayName="Sequence Operation" sap:VirtualizedContainerService.HintSize="678,3372" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:MessageBox ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" Caption="[strrDialogLabel]" DisplayName="Message Box Dialog" sap:VirtualizedContainerService.HintSize="616,117" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[strDialogMessage]" />
+      <ui:SelectFile DisplayName="Browse For File CSV Document" Filter="All files (*.*)|*.*" sap:VirtualizedContainerService.HintSize="616,170" sap2010:WorkflowViewState.IdRef="SelectFile_1" SelectedFile="[strFilePath]" />
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Firefox: New Tab" sap:VirtualizedContainerService.HintSize="616,2965" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" ScopeGuid="7844746c-0f9c-4f37-bc96-38a4da89f82f" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="582,2725" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="Sequence Log In" sap:VirtualizedContainerService.HintSize="520,979" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="strUsername" />
+                  <Variable x:TypeArguments="ss:SecureString" Name="secStrPassword" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="acme-test.uipath.com" CacheStrategy="None" DisplayName="Get Credential acme-test.uipath.com" FolderPath="DEV" sap:VirtualizedContainerService.HintSize="388,175" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[secStrPassword]" Username="[strUsername]" />
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="7844746c-0f9c-4f37-bc96-38a4da89f82f" Text="[strUsername]" Version="V3">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/login" CvElementArea="158, 380, 487, 37" CvType="InputBox" DesignTimeRectangle="160, 382, 485, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='email' class='form-control ' aaname='Email:' /&gt;" Guid="fc34eff2-fcb1-49b6-863b-92588b4063eb" InformativeScreenshot="5128a6e320c825208fdb7458224e070b.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='firefox.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvTextArea="159, 360, 42, 13" CvTextArgument="Email:" CvType="Text" DesignTimeRectangle="160, 357, 41, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Email:' check:innerText='Email:' /&gt;" Guid="40e58df9-90ae-4f8e-af19-6cdd37b13f2e" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="7844746c-0f9c-4f37-bc96-38a4da89f82f" SecureText="[secStrPassword]" Version="V3">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/login" CvElementArea="158, 454, 488, 38" CvType="InputBox" DesignTimeRectangle="160, 456, 485, 34" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control ' aaname='Password:' /&gt;" Guid="56b760be-cd3a-48d8-a5dd-a63f6f3396df" InformativeScreenshot="a67b4682d0c97aabb996819b436967f7.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvTextArea="159, 434, 73, 13" CvTextArgument="Password:" CvType="Text" DesignTimeRectangle="160, 431, 72, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Password:' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password:' tag='LABEL' type='' class='' check:innerText='Password:' /&gt;" Guid="03226fa6-1cdb-4b7b-a020-efbb1521951a" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7844746c-0f9c-4f37-bc96-38a4da89f82f" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/login" CvElementArea="158, 545, 64, 37" CvTextArea="172, 557, 36, 16" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="160, 547, 61, 34" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-primary' aaname='                             Login                         ' check:innerText='Login' /&gt;" Guid="777fa8ab-9e88-4585-8805-6e2ea3d5bf25" InformativeScreenshot="a99de9e404c181276c36dbc4598b2932.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvElementArea="223, 545, 177, 36" CvTextArea="237, 556, 149, 16" CvTextArgument="Forgot Your Password?" CvType="Button" DesignTimeRectangle="225, 547, 174, 34" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                                 Forgot Your Password?          *' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                 Forgot Your Password?          *' tag='A' type='' class='btn bg-warning' check:innerText='Forgot Your Password?' /&gt;" Guid="2dd22fc3-d032-40a1-8b50-138e93e71387" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+              </Sequence>
+              <Sequence DisplayName="Sequence Scrape" sap:VirtualizedContainerService.HintSize="520,1437" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:RetryScope DisplayName="Retry Scope Work Items" sap:VirtualizedContainerService.HintSize="458,422" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[intRetryCount]" RetryInterval="[timeSpanRetryInterval]">
+                  <ui:RetryScope.ActivityBody>
+                    <ActivityAction>
+                      <Sequence DisplayName="Action Work Items" sap:VirtualizedContainerService.HintSize="416,215" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'BUTTON'" sap:VirtualizedContainerService.HintSize="354,130" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+                          <ui:WaitUiElementAppear.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fdc36db6-d56e-44f9-b4d6-dcab378e4e4a" InformativeScreenshot="00ee8d9a0b48f61cc2549cf3afc9d92c" Selector="&lt;webctrl aaname='                          Work Items' parentid='dashmenu' tag='BUTTON' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:WaitUiElementAppear.Target>
+                        </ui:WaitUiElementAppear>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:RetryScope.ActivityBody>
+                  <ui:RetryScope.Condition>
+                    <ActivityFunc x:TypeArguments="x:Boolean" />
+                  </ui:RetryScope.Condition>
+                </ui:RetryScope>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Work Items'" sap:VirtualizedContainerService.HintSize="458,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7844746c-0f9c-4f37-bc96-38a4da89f82f" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/home" CvElementArea="158, 454, 204, 50" CvTextArea="225, 470, 94, 16" CvTextArgument="Work Items" CvType="Button" DesignTimeRectangle="160, 456, 200, 46" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='                          Work Items' parentid='dashmenu' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                          Work Items' parentid='dashmenu' tag='BUTTON' type='button' class='btn btn-default btn-lg' check:innerText='Work Items' /&gt;" Guid="d08fff5f-5d8c-40af-ade3-355786fb4bea" InformativeScreenshot="36351b975f6640329c94db453a7c8d44.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='ACME System 1 - Dashboard' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvElementArea="158, 398, 203, 49" CvTextArea="219, 414, 102, 20" CvTextArgument="User options" CvType="Button" DesignTimeRectangle="160, 400, 200, 46" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='dashmenu' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='dashmenu' tag='BUTTON' type='button' class='btn btn-default btn-lg dropdown-toggle' aaname='                  User options' check:innerText='User options' /&gt;" Guid="9dd7fe82-7365-40f8-8b3b-4f53e23aac5a" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <ui:RetryScope DisplayName="Retry Scope Actions Header" sap:VirtualizedContainerService.HintSize="458,422" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="[intRetryCount]" RetryInterval="[timeSpanRetryInterval]">
+                  <ui:RetryScope.ActivityBody>
+                    <ActivityAction>
+                      <Sequence DisplayName="Action Actions Header" sap:VirtualizedContainerService.HintSize="416,215" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element Actions Header" sap:VirtualizedContainerService.HintSize="354,130" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2">
+                          <ui:WaitUiElementAppear.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="230bcb06-322d-473f-b8bb-a1c9fa796e02" InformativeScreenshot="0b46c61e053c6de75e70be1fe17e185e" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TH' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:WaitUiElementAppear.Target>
+                        </ui:WaitUiElementAppear>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:RetryScope.ActivityBody>
+                  <ui:RetryScope.Condition>
+                    <ActivityFunc x:TypeArguments="x:Boolean" />
+                  </ui:RetryScope.Condition>
+                </ui:RetryScope>
+                <uix:NExtractData sap2010:Annotation.AnnotationText="There is a difficulty here when the scraping gets to the last page.  Since the next button disappears the table extraction times out.&#xA;There is no way to interrupt the table extraction activity at this point so the continue on error is set to true and a timeout is expected." AppendResults="False" ContinueOnError="True" DataTable="[dt_Data]" DisplayName="Extract Table Data dt_Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Actions' ReferenceIdx='0' Name='Actions' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Actions Url' ReferenceIdx='1' Name='Actions Url' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='WIID' ReferenceIdx='2' Name='WIID'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Description' ReferenceIdx='3' Name='Description'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Type' ReferenceIdx='4' Name='Type'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Status' ReferenceIdx='5' Name='Status'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Date' ReferenceIdx='6' Name='Date'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Actions' attr='fulltext' name2='Actions Url' attr2='href' /&gt;&lt;column name='WIID' attr='fulltext' /&gt;&lt;column name='Description' attr='fulltext' /&gt;&lt;column name='Type' attr='fulltext' /&gt;&lt;column name='Status' attr='fulltext' /&gt;&lt;column name='Date' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="458,282" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="7844746c-0f9c-4f37-bc96-38a4da89f82f" Timeout="[doubleTimeout]" Version="V3">
+                  <uix:NExtractData.NextLink>
+                    <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items" CvElementArea="1130, 867, 25, 25" CvType="ArrowButton" DesignTimeRectangle="1132, 868, 22, 22" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-label='Next »' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Next »' tag='A' type='' class='page-numbers' aaname='&amp;gt;' check:innerText='&amp;gt;' /&gt;" Guid="1b142743-dc7c-42d5-b1eb-708b2a083435" ScopeSelectorArgument="&lt;html app='firefox.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvElementArea="1094, 866, 26, 25" CvTextArea="1097, 871, 18, 14" CvType="Icon" DesignTimeRectangle="1096, 868, 22, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='10' class='page-numbers' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='10' class='page-numbers' tag='A' type='' check:innerText='10' /&gt;" Guid="a839d8b9-bae8-495c-b525-3edd5ad1d6b0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE5SURBVEhLzZVhDoMgDIV3Wk/BKTgFp+AUXIIY4x/jH2M6nwLD2uE0huwlL1Fo+w0o7kWV9D+geZ5pHEfq+57atiXv/Wo8YwxziDlTETQMQyp8ZsSWJIKmaaKu68SCJSMHuZIOIATmW3TVyJVgB9CdlXCjBtcOdOVMzszPLIHQOVKC946MakhbebxpNivj2LzfdWMCoU15YF5sDwrj2oZ3S1qAoWZUAuFO5EHOqO3XKk2ar8gZUo0i47Ixq5dYQy6+L0bNqATineaMIbs+C1snFN3gOuRsRs2oBEoJBx9B62pFEFvl4qj6oO+X9OGt483wsQASiv7cDHJ7wwIojN1q72oXFqryCYqq8lGFqv1NQAi8szLkSBBIBEVdOTN+JlxFEITOQZviTuRbimeMYS7vrm86BT2lSiCiNxVj4hrty8QGAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NExtractData.NextLink>
+                  <uix:NExtractData.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="161, 423, 998, 430" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="9f0be3ff-7781-47d4-bdec-d312d8de7c02" InformativeScreenshot="e0897890b2c9c3ffedaed3cc31983066.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                  </uix:NExtractData.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NExtractData>
+              </Sequence>
+              <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="The selector set to Switch to * theme to handle both cases." ClickType="Single" DelayAfter="[doubleDelay]" DisplayName="Click 'Log Out'" sap:VirtualizedContainerService.HintSize="520,222" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7844746c-0f9c-4f37-bc96-38a4da89f82f" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items" CvTextArea="1178, 102, 53, 17" CvTextArgument="Log Out" CvType="Text" DesignTimeRectangle="1164, 85, 81, 50" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Log Out' parentid='bs-example-navbar-collapse-1' tag='A' type='' class='' check:innerText='Log Out' /&gt;" Guid="1e5cc862-af8f-428b-8322-3389d1d40141" InformativeScreenshot="d9e3b8b7e37173ce23823d705691f6ef.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArea="1019, 103, 131, 13" CvTextArgument="Switch to new theme" CvType="Text" DesignTimeRectangle="1006, 85, 158, 50" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Switch to * theme' parentid='bs-example-navbar-collapse-1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Switch to * theme' parentid='bs-example-navbar-collapse-1' tag='A' type='' class='' check:text='Switch to new theme' /&gt;" Guid="b079074d-ed0c-4653-ba1f-2c0e4ec080a3" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="2515, 18, 1320, 1524" BrowserType="Firefox" IconBase64="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" InformativeScreenshot="c8909df6f7a1b09fc285b369857c1bb8.png" Selector="&lt;html app='firefox.exe' title='New Tab' /&gt;" Title="New Tab" Url="[strURL]" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+    <Sequence DisplayName="Sequence End" sap:VirtualizedContainerService.HintSize="678,470" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:WriteCsvFile AddHeaders="True" DataTable="[dt_Data]" Delimitator="Comma" DisplayName="Write CSV dt_Data" FilePath="[strFilePath]" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
+      <ui:LogMessage DisplayName="Log Message RPADev-S05P05-DataScraping-VB.Main.OperationCompleted;" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;RPADev-S05P05-DataScraping-VB.Main.OperationCompleted; Scrape data written to: &quot; + strFilePath]" />
+    </Sequence>
+    <ui:LogMessage DisplayName="Log Message RPADev-S05P05-DataScraping-VB.Main.End;" sap:VirtualizedContainerService.HintSize="678,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;RPADev-S05P05-DataScraping-VB.Main.End;&quot;]" />
+  </Sequence>
+</Activity>

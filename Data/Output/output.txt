@@ -1,0 +1,8 @@
+05/06/2024 19:31:07 => [Debug] Debug started for file: Main
+05/06/2024 19:31:08 => [Info] RPADev-S05P05-DataScraping-VB execution started
+05/06/2024 19:31:08 => [Info] RPADev-S05P05-DataScraping-VB.Main.Begin;
+05/06/2024 19:31:10 => [Debug] Audit: Using Web App. Browser: Firefox URL: https://acme-test.uipath.com/login
+05/06/2024 19:31:20 => [Debug] Audit: Extract Data. From: <html app='firefox.exe' title='New Tab' />
+05/06/2024 19:31:59 => [Info] RPADev-S05P05-DataScraping-VB.Main.OperationCompleted; Scrape data written to: Data\Output\RPADev-S05P05-DataScraping.csv
+05/06/2024 19:31:59 => [Info] RPADev-S05P05-DataScraping-VB.Main.End;
+05/06/2024 19:31:59 => [Info] RPADev-S05P05-DataScraping-VB execution ended in: 00:00:51
