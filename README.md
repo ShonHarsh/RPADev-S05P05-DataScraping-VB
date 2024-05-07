@@ -1,5 +1,5 @@
 ![](https://shonharsh.github.io/curriculum-vitae/images/banner-uipath.png)
-# //Project Pending - I am still updating all of the projects for the RPA Developer Foundation.  In doing so I am updating the existing C# Windows Legacy project while also rewriting them in both C# Windows and VB Windows.  I complete at least one project a day.
+
 # S05P05 Data Scraping & UI Elements
 
 This project is my solution in **VB** to the **Data Scraping & UI Elements** practice found in section 05 practice 05 of the UiPath - RPA Developer Foundation course.
@@ -35,7 +35,14 @@ Create a process that automates extracting the data from ACME Work items page.
 ### Sample Output
 
 ```
-
+05/06/2024 19:31:07 => [Debug] Debug started for file: Main
+05/06/2024 19:31:08 => [Info] RPADev-S05P05-DataScraping-VB execution started
+05/06/2024 19:31:08 => [Info] RPADev-S05P05-DataScraping-VB.Main.Begin;
+05/06/2024 19:31:10 => [Debug] Audit: Using Web App. Browser: Firefox URL: https://acme-test.uipath.com/login
+05/06/2024 19:31:20 => [Debug] Audit: Extract Data. From: <html app='firefox.exe' title='New Tab' />
+05/06/2024 19:31:59 => [Info] RPADev-S05P05-DataScraping-VB.Main.OperationCompleted; Scrape data written to: Data\Output\RPADev-S05P05-DataScraping.csv
+05/06/2024 19:31:59 => [Info] RPADev-S05P05-DataScraping-VB.Main.End;
+05/06/2024 19:31:59 => [Info] RPADev-S05P05-DataScraping-VB execution ended in: 00:00:51
 ```
 
 ### Architecture Requirements
